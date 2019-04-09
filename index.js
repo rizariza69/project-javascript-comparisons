@@ -14,9 +14,9 @@ const ageA = 18;
 const ageB = 25;
 
 if (ageA > ageB) {
-  console.log("too old");
+  console.log(`${ageB} too old`);
 } else if (ageA < ageB) {
-  console.log("too young");
+  console.log(`${ageA} too young`);
 } else {
   console.log("its your age");
 }
@@ -35,11 +35,11 @@ const personB = {
 
 switch (personA.age > personB.age) {
   case true:
-    console.log(`${personA.name} more than youngwith ${personB.name}`);
+    console.log(`${personA.name} young with ${personB.name}`);
     break;
 
   case false:
-    console.log(`${personB.name} more than older with ${personA.name}`);
+    console.log(`${personB.name} older with ${personA.name}`);
     break;
 
   default:
@@ -52,8 +52,8 @@ let name = "domi";
 let job = "soldier";
 
 if (name === "" && job === "") {
-  console.log("please create your name!!");
-} else if (name === "domi" && job === "") {
+  console.log("please tell your name and job!");
+} else if (name !== "" && job === "") {
   console.log(`helo ${name}, welcome to the world`);
 } else if (name === "domi" && job === "soldier") {
   console.log(`Come on ${name} save the world`);
